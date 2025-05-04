@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -22,11 +22,11 @@ public class Seller implements Serializable{
             this.department = department;
         }
     
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -69,8 +69,6 @@ public class Seller implements Serializable{
     public void setDepartment(Department department) {
         this.department = department;
     }
-
-  
 
     @Override
     public int hashCode() {
